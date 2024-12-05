@@ -1,14 +1,33 @@
 
-h2 {color:gold; text-shadow: 1px 5px 5px; font-family: italic,sans-serif;font-size: x-large;} 
-h3 {color:gold; text-shadow: 1px 5px 5px; font-family:italic,sans-serif;font-size: x-large;} /* testing out comments*/
-p {color: gold;font-family:italic,sans-serif;}  /*when testing headers and whatnot, I used probably too many variations therefore complicating the programming of sections. In my defense, this code is new to me, and as time goes on, my refinement has come with more knowledge attained.*/
-body{background-color: black;font-family:italic,sans-serif;}
-ul{color: gold;font-family:italic,sans-serif;}
-li{color: gold;font-family:italic,sans-serif;}
-h4 {font-size: 130%; font-family:italic,sans-serif;}
-img.center {border-radius: 70%;-webkit-transition: -webkit-transform .8s ease-in-out;transition:all .8s ease-in-out;}
-  img.center:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-body {border-style: solid;color: cornsilk; border-radius: 5%}
+h2 {
+  color:gold; 
+  text-shadow: 1px 5px 5px; 
+  font-family: italic, sans-serif;
+  font-size: x-large;} 
+h3 {color:gold;
+   text-shadow:1px 5px 5px; 
+   font-family:italic,sans-serif;
+   font-size: x-large;} /* testing out comments*/
+p {color: gold;
+  font-family:italic,sans-serif;}  /*when testing headers and whatnot, I used probably too many variations therefore complicating the programming of sections. In my defense, this code is new to me, and as time goes on, my refinement has come with more knowledge attained.*/
+body{
+  background-color: black;
+  font-family:italic,sans-serif;}
+ul{color: gold;
+  font-family:italic,sans-serif;}
+li{color: gold;
+  font-family:italic,sans-serif;}
+h4 {font-size: 130%; 
+  font-family:italic,sans-serif;}
+img.center {
+  border-radius: 70%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:all .8s ease-in-out;}
+  img.center:hover {-webkit-transform: 
+    rotate(360deg);transform: 
+    rotate(360deg);}
+body {border-style: solid;
+  color: cornsilk; border-radius: 5%}
 section {border-style: dashed;color: cornsilk; border-radius: 5%;margin: 3%;margin-top: 4%;padding: 1rem;margin-left: 5%;}
 .center {display: block;margin-left: auto;margin-right: auto}
 .p1{color: white;font-family:italic,sans-serif;}

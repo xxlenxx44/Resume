@@ -1,166 +1,156 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Len's Resume</title>
 
-
-
-
-<!-- head keeps all the behind the scenes things running-->
+    <!-- head keeps all the behind the scenes things running-->
   </head>
 
+  <body>
+    <section>
+      <div>
+        <img class="center" src="myimages/springboard.jpg" alt="Springboard" />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name:</th>
+            <td>Len Faltin</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Email:</th>
+            <td>lenfaltin@yahoo.com</td>
+          </tr>
+          <tr>
+            <th>Phone:</th>
+            <td>6302155312</td>
+          </tr>
+          <tr>
+            <th>Linkedin:</th>
+            <td>
+              <a href="https://www.linkedin.com/in/len-faltin-83a255127/">
+                My Linkedin Profile</a
+              >
+            </td>
+            <!--external link-->
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Springboard 2024-</li>
+        <li>Illinois Welding School 2017-2018</li>
+        <li>Lemont High School 2012-2016</li>
+      </ul>
 
+      <!--the opener paragraph of my resume-->
+    </section>
 
-<body> 
- <section>
-<div><img class="center" src="myimages/springboard.jpg" alt="Springboard"></div>
-<table>
-    <tr>
-     <thead> <th>Name:</th>
-      <td>Len Faltin</td></thead>
-    </tr>
-    <tr>
-      <th>Email:</th>  
-      <td>lenfaltin@yahoo.com</td>      
-    </tr>  
-    <tr>
-        <th>Phone:</th>
-        <td>6302155312</td>
-    </tr>
-    <tr>
-        <th>Linkedin:</th>
-    <td><a href="https://www.linkedin.com/in/len-faltin-83a255127/"> My Linkedin Profile</a></td>  <!--external link-->
-    </tr>
-  </table>
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>2016 Lemont High School Chess 2016 Conference Champions</li>
+        <li>
+          Certificate of Appreciation Illinois Welding School for setting up
+          their Facebook page.
+        </li>
+      </ul>
 
- 
-   
+      <!--/*accomplishments*\-->
+    </section>
 
+    <section>
+      <h2>What I will learn taking this course</h2>
+      <ul>
+        <li>Javascript, CSS, and HTML, the foundations to build a website.</li>
+        <li>Making a table</li>
+        <li>How to build a resume displaying the skills I learn in html</li>
+        <li class="p1">
+          How to incorporate CSS into my documents to make them more vibrant,
+          interactive and less bland!
+        </li>
+        <li>How to use different elements of HTML to build this resume</li>
+        <li>
+          Learning box models to give things like the borders seen around the
+          sections of this resume.
+        </li>
+      </ul>
 
-</section>
+      <!--/*knowledge obtained*\-->
+    </section>
 
+    <section>
+      <h2>CONTACT ME</h2>
+      <form action="submit_form.php" method="POST">
+        <!-- Action URL to handle form submission -->
+        <label for="email">Your Email Info:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        /><br /><br />
 
-<section>
-<tr>
+        <label for="company">Your Company Info:</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          placeholder="Company"
+          required
+        /><br /><br />
 
-<ol>
-<h2><ul>Education</ul></h2>
-<ul><li><p> Springboard 2024-</p></li></ul>
-<ul><li><p> Illinois Welding School 2017-2018</p></ul></li>
-<ul><li><p>Lemont High School 2012-2016</p></li></ul>
-</ol>
-<!--the opener paragraph of my resume-->
-</tr>
-   </section></thead>
+        <label for="role">Your Role:</label>
+        <input
+          type="text"
+          id="role"
+          name="role"
+          placeholder="Role"
+          required
+        /><br /><br />
 
-
-
-
-
-
-
-
-   <section>
-<ol>
-<h2><ul>Achievements</ul></h2>
-<li><p>2016 Lemont High School Chess 2016 Conference Champions</li></p>
-<li><p>Certificate of Appreciation Illinois Welding School for setting up their Facebook page.</p></li>
-</ol>
-
-
-
-
-
-<!--/*accomplishments*\-->
-</section>
-
-
-
-
-
-
-
-
-<section>
-    
-        <ol>
-<ul><h2>What I will learn taking this course</h2></ul>
-<ul><li>Javascript, CSS, and HTML, the foundations to build a website.</li></ul>
-<ul><li>Making a table</li></ul>
-<ul><li>How to build a resume displaying the skills I learn in html</li></ul>
-<ul><li class="p1">How to incorporate CSS into my documents to make them more vibrant, interactive and less bland!</li></ul>  
-<ul><li> How to use different elements of HTML to build this resume</li> </ul>
-<ul><li> Learning box models to give things like the borders seen around the sections of this resume.</li> </ul>
-
-</ol>
-    </table>
-<!--/*knowledge obtained*\-->
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-<section>
-  <h2>CONTACT ME</h2>
-  <form action="submit_form.php" method="POST"> <!-- Action URL to handle form submission -->
-      <label for="email">Your Email Info:</label>
-      <input type="email" id="email" name="email" placeholder="Email" required><br><br>
-
-      <label for="company">Your Company Info:</label>
-      <input type="text" id="company" name="company" placeholder="Company" required><br><br>
-
-      <label for="role">Your Role:</label>
-      <input type="text" id="role" name="role" placeholder="Role" required><br><br>
-
-      <label for="reason">Reason for Contact:</label>
-      <select id="reason" name="reason">
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason">
           <option value="job-offer">Job Offer</option>
           <option value="collaboration">Collaboration</option>
-          <option value="feedback">Feedback</option>
-      </select><br><br>
+          <option value="feedback">Feedback</option></select
+        ><br /><br />
 
-      <label for="contact-time">What is a good time to contact you back?</label><br>
-      <label>Morning?</label><input type="checkbox" name="contact-time" value="morning"><br>
-      <label>Afternoon?</label><input type="checkbox" name="contact-time" value="afternoon"><br>
-      <label>Evening?</label><input type="checkbox" name="contact-time" value="evening"><br><br>
+        <label for="contact-time"
+          >What is a good time to contact you back?</label
+        ><br />
+        <label>Morning?</label
+        ><input type="checkbox" name="contact-time" value="morning" /><br />
+        <label>Afternoon?</label
+        ><input type="checkbox" name="contact-time" value="afternoon" /><br />
+        <label>Evening?</label
+        ><input
+          type="checkbox"
+          name="contact-time"
+          value="evening"
+        /><br /><br />
 
-      <label for="message">Message me here:</label><br>
-      <textarea id="message" name="message" placeholder="Enter Information Here" required></textarea><br><br>
+        <label for="message">Message me here:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter Information Here"
+          required
+        ></textarea
+        ><br /><br />
 
-      <input type="submit" value="Submit">
-      <input type="reset" value="Reset">
-  </form>
-</section>
-
-
-
-
-
-</body>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-

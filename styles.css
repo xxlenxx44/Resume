@@ -119,12 +119,13 @@ a .hover-text {
 }
 
 .hover-container1 {
-  display: inline-block;
   position: relative;
-  overflow: hidden;
-  border-radius: 10%;
-  width: 200px; /* Adjust container dimensions for the image */
+  width: 200px;
   height: auto;
+  text-align: left
+  margin: 10px auto;
+  border-radius: 20px; /* Apply rounded corners */
+  overflow: hidden; /* Ensures child elements respect the border-radius */
 }
 
 

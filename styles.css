@@ -73,13 +73,12 @@ table {margin-left: auto;
 label {font-family:italic,sans-serif; color: gold; margin-top: 10%;} 
 
 a.outlier {
-  display: block; /* Ensures left alignment */
-  text-align: left;
   color: whitesmoke;
   font-family: italic, sans-serif;
-  font-size: 100%;
+  font-size: 110%;
   font-weight: bold;
-  text-decoration: none;
+
+ 
 }
 
 a:hover .hover-image {
@@ -109,7 +108,7 @@ a .hover-text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: .8em;
+  font-size: .9em;
   color: white;
   font-family: Arial, sans-serif;
   text-shadow: 1px 2px 5px black;
@@ -151,14 +150,13 @@ a .hover-text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: gold;
   font-size: 1.5em;
+  color: gold;
   font-family: Arial, sans-serif;
   text-shadow: 1px 2px 5px black;
   opacity: 0;
+  pointer-events: none; /* Disables interaction with the hover-text directly */
   transition: opacity 0.3s ease-in-out;
-  width: 100%; /* Match the container’s width for proper alignment */
-  text-align: center;
 }
 
 .hover-container:hover .hover-image {

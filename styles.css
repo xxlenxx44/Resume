@@ -1,0 +1,176 @@
+
+h2 {
+  color:gold; 
+  text-shadow: 1px 5px 5px; 
+  font-family: italic, sans-serif;
+  font-size: x-large;} 
+h3 {color:gold;
+   text-shadow:1px 5px 5px; 
+   font-family:italic,sans-serif;
+   font-size: x-large;} /* testing out comments*/
+p {color: gold;
+  font-family:italic,sans-serif;}  /*when testing headers and whatnot, I used probably too many variations therefore complicating the programming of sections. In my defense, this code is new to me, and as time goes on, my refinement has come with more knowledge attained.*/
+body{
+  background-color: black;
+  font-family:italic,sans-serif;}
+ul{color: gold;
+  font-family:italic,sans-serif;}
+li{color: gold;
+  font-family:italic,sans-serif;}
+h4 {font-size: 130%; 
+  font-family:italic,sans-serif;}
+  
+ 
+body {border-style: solid;
+  color: cornsilk; border-radius: 5%}
+section {border-style: dashed;color: cornsilk; border-radius: 5%;margin: 3%;margin-top: 4%;padding: 1rem;margin-left: 5%;}
+
+  
+.p1{color: white;font-family:
+  italic,sans-serif;}
+a {display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family:italic,sans-serif;
+  font-size: 150%;color: whitesmoke;
+  font-weight: bold;text-decoration:none}
+
+p1 {display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family:italic,sans-serif;
+  font-size: 150%;
+  text-shadow: 1px 5px 5px;}
+#p {display: flex;align-items: center;
+  justify-content: flex-end;
+  font-family:italic,sans-serif;
+  font-size: 150%;}
+#namecenter {color:gold; 
+  text-align:center;
+  font-family:italic,sans-serif;
+  font-size: 150%;
+  text-shadow: 1px 5px 5px}
+#namecenter1 {color:gold; 
+  text-align:center;
+  font-family:italic,sans-serif;
+  font-size: 150%;
+  text-align: center;}
+th {text-shadow: 1px 5px 5px; 
+  font-family:italic,sans-serif;
+  border-style: dashed;
+  color: gold;
+   border-radius: 5%;
+   margin: 10%;
+   margin-top: -4%;
+   padding: 1rem;
+   margin-left: 5%;}
+td {font-family:italic,sans-serif;
+  border-style: dashed;
+  color: gold; 
+  border-radius: 5%;margin: 10%;margin-top: -4%;padding: 1rem;margin-left: 5%;}
+table {margin-left: auto;
+  margin-right: auto; text-align: left;justify-content: left;}
+label {font-family:italic,sans-serif; color: gold; margin-top: 10%;} 
+
+a.outlier {
+  display: block; /* Ensures left alignment */
+  text-align: left;
+  color: whitesmoke;
+  font-family: italic, sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover .hover-image {
+  opacity: 0;
+}
+
+a:hover .hover-text {
+  opacity: 1;
+}
+
+.hover-container a {
+  position: relative;
+  display: block; /* Makes the link element the container for both text and image */
+  text-decoration: none; /* Removes underline on the link */
+}
+
+a:hover .hover-text {
+  display: inline; /* Ensures the text link becomes visible */
+}
+
+.outlier-img {
+  transition: opacity 0.5s ease; /* Smooth fade on hover */
+}
+
+a .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: .8em;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 2px 5px black;
+  opacity: 0;
+  pointer-events: none; /* Disables interaction with the hover-text directly */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-container1 {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 10%;
+  width: 200px; /* Adjust container dimensions for the image */
+  height: auto;
+}
+
+
+.hover-container {
+  position: relative;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 20px; /* Apply rounded corners */
+  overflow: hidden; /* Ensures child elements respect the border-radius */
+}
+
+.hover-image {
+  width: 100%;
+  height: auto;
+  transition: opacity .9s ease-in-out;
+  border-radius: 70%; /* Ensure image also respects the border-radius */
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gold;
+  font-size: 1.5em;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 2px 5px black;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%; /* Match the container’s width for proper alignment */
+  text-align: center;
+}
+
+.hover-container:hover .hover-image {
+  opacity: 0; /* Hide the image on hover */
+}
+
+.hover-container:hover .hover-text {
+  opacity: 1; /* Show the text on hover */
+}
+
+
+
+
+
+
+/*did the 5% radius to give a nice flat appearance all around but to round off the corners just a little bit*\
+/*borrowed code from https://www.w3schools.com/tags/tag_table.asp*\

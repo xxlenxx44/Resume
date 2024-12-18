@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Len's Resume</title>
+</head>
+<body>
+  <section>
+   <div class="hover-container">
+  <img src="myimages/springboard.jpg" alt="Springboard Logo" class="hover-image">
+  <span class="hover-text">Welcome to my Resume!</span>
+</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name:</th>
+          <td>Len Faltin</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Email:</th>
+          <td>lenfaltin@yahoo.com</td>
+        </tr>
+        <tr>
+          <th>Phone:</th>
+          <td>6302155312</td>
+        </tr>
+        <tr>
+          <th>LinkedIn:</th>
+          <td>
+            <a href="https://www.linkedin.com/in/len-faltin-83a255127/" target="_blank">
+              My LinkedIn Profile
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <section>
+    <h2>Current Projects</h2>
+    <ul>
+      <li class="hover-container1">
+        <a href="https://outlier.ai/" target="_blank">
+          <img src="myimages/outlier.jpg" alt="Outlier" class="hover-image outlier-img">
+          <span class="hover-text">Help train AI models to understand Javascript and Python better with Outlier.</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</section>
+  
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>Springboard 8-2024/12-2024</li>
+      <li>Coursera Google Tech Support Fundamentals 4-2023/7-2023</li>
+      <li>Illinois Welding School 2017-2018</li>
+      <li>Lemont High School 2012-2016</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Achievements</h2>
+    <ul>
+      <li>Lemont High School Chess 2016 Conference Champions</li>
+      <li>Certificate of Appreciation from Illinois Welding School for helping set up their Facebook page.</li>
+    </ul>
+  </section>
+  
+
+  <section>
+    <h2>What I have learned while taking classes with Springboard.</h2>
+    <ul>
+      <li>JavaScript, CSS, and HTML, the foundations to build a website.</li>
+      <li>Making a table</li>
+    <li>How to use GitHub and how to use GitHub Desktop</li>
+    <li>How to use Git Bash</li>
+    <li>How to use Visual Studio Code</li>
+    <li>implementing APIs to handle data</li>
+      <li class="p1">How to incorporate CSS into my documents to make them more vibrant and interactive!</li>
+      <li>How to use different elements of HTML to build this resume</li>
+      <li>Learning different implentations within CSS to give the HTML life found within this resume.</li>
+    </ul>
+  </section>
+
+  <section id="contact-section">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xdkovepv" method="post" class="gform">
+      <ul>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </ul>
+      <ul>
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </ul>
+      <ul>
+        <label for="company">Your Company:</label>
+        <input type="text" id="company" name="company" placeholder="Enter your company name">
+      </ul>
+      <ul>
+        <label for="role">Your Role:</label>
+        <input type="text" id="role" name="role" placeholder="Enter your role">
+      </ul>
+      <h3>What is a good time to contact you back?</h3>
+      <ul>
+        <label><input type="checkbox" name="contact_time" value="morning"> Morning</label>
+        <label><input type="checkbox" name="contact_time" value="afternoon"> Afternoon</label>
+        <label><input type="checkbox" name="contact_time" value="evening"> Evening</label>
+      </ul>
+      <ul>
+        <label for="message">Message Reason:</label>
+        <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+      </ul>
+      <div class="form-actions">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </section>
+  
+</body>
+</html>

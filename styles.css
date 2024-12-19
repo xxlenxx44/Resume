@@ -1,15 +1,14 @@
 
 h2 {
-  color:gold; 
+  color:white; 
   text-shadow: 1px 5px 5px; 
   font-family: italic, sans-serif;
   font-size: x-large;} 
-h3 {color:gold;
+h3 {color:white;
    text-shadow:1px 5px 5px; 
    font-family:italic,sans-serif;
    font-size: x-large;} /* testing out comments*/
-p {color: gold;
-  font-family:italic,sans-serif;}  /*when testing headers and whatnot, I used probably too many variations therefore complicating the programming of sections. In my defense, this code is new to me, and as time goes on, my refinement has come with more knowledge attained.*/
+
 body{
   background-color: black;
   font-family:italic,sans-serif;}
@@ -22,12 +21,11 @@ h4 {font-size: 130%;
   
  
 body {border-style: solid;
-  color: cornsilk; border-radius: 5%}
-section {border-style: dashed;color: cornsilk; border-radius: 5%;margin: 3%;margin-top: 4%;padding: 1rem;margin-left: 5%;}
+  color: gold; border-radius: 5%}
+section {border-style: dashed;color: gold; border-radius: 5%;margin: 3%;margin-top: 4%;padding: 1rem;margin-left: 5%;}
 
   
-.p1{color: white;font-family:
-  italic,sans-serif;}
+
 a {display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -58,7 +56,8 @@ p1 {display: flex;
 th {text-shadow: 1px 5px 5px; 
   font-family:italic,sans-serif;
   border-style: dashed;
-  color: gold;
+ color: white;
+ border-color: gold;
    border-radius: 5%;
    margin: 10%;
    margin-top: -4%;

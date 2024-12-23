@@ -26,7 +26,11 @@ section {border-style: dashed;color: gold; border-radius: 5%;margin: 3%;margin-t
 
   
 
-a {display: flex;
+
+
+ .iws {color: whitesmoke; text-align: left;}
+
+ .linkedin {display: flex;
   align-items: center;
   justify-content: flex-end;
   font-family:italic,sans-serif;

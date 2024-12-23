@@ -28,7 +28,7 @@ section {border-style: dashed;color: gold; border-radius: 5%;margin: 3%;margin-t
 
 
 
- a,.iws {color: whitesmoke; text-align: left;}
+ a,.iws {color: whitesmoke; align-items: left;}
 
  .linkedin {display: flex;
   align-items: center;

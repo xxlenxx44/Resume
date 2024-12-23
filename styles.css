@@ -28,7 +28,7 @@ section {border-style: dashed;color: gold; border-radius: 5%;margin: 3%;margin-t
 
 
 
- .iws {color: whitesmoke; text-align: left;}
+ a,.iws {color: whitesmoke; text-align: left;}
 
  .linkedin {display: flex;
   align-items: center;
@@ -75,7 +75,7 @@ table {margin-left: auto;
   margin-right: auto; text-align: left;justify-content: left;}
 label {font-family:italic,sans-serif; color: gold; margin-top: 10%;} 
 
-a.outlier {
+.outlier {
   display: block; /* Ensures left alignment */
   text-align: left;
   color: whitesmoke;

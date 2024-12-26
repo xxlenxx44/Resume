@@ -1,152 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-h2 {
-  color:white; 
-  text-shadow: 1px 5px 5px; 
-  font-family: italic, sans-serif;
-  font-size: x-large;} 
-h3 {color:white;
-   text-shadow:1px 5px 5px; 
-   font-family:italic,sans-serif;
-   font-size: x-large;} /* testing out comments*/
-
-body{
+body {
   background-color: black;
-  font-family:italic,sans-serif;}
-ul{color: gold;
-  font-family:italic,sans-serif;}
-li{color: gold;
-  font-family:italic,sans-serif;}
-h4 {font-size: 130%; 
-  font-family:italic,sans-serif;}
-  
- 
-body {border-style: solid;
-  color: gold; border-radius: 5%}
-section {border-style: dashed;color: gold; border-radius: 5%;margin: 3%;margin-top: 4%;padding: 1rem;margin-left: 5%;}
-
-  
-
-
-
- a {color: whitesmoke; align-items: left;}
-
- .linkedin {display: flex;
+  color: gold;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  font-family:italic,sans-serif;
-  font-size: 150%;color: whitesmoke;
-  font-weight: bold;text-decoration:none}
-
-p1 {display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-family:italic,sans-serif;
-  font-size: 150%;
-  text-shadow: 1px 5px 5px;}
-#p {display: flex;align-items: center;
-  justify-content: flex-end;
-  font-family:italic,sans-serif;
-  font-size: 150%;}
-#namecenter {color:gold; 
-  text-align:center;
-  font-family:italic,sans-serif;
-  font-size: 150%;
-  text-shadow: 1px 5px 5px}
-#namecenter1 {color:gold; 
-  text-align:center;
-  font-family:italic,sans-serif;
-  font-size: 150%;
-  text-align: center;}
-th {text-shadow: 1px 5px 5px; 
-  font-family:italic,sans-serif;
-  border-style: dashed;
- color: white;
- border-color: gold;
-   border-radius: 5%;
-   margin: 10%;
-   margin-top: -4%;
-   padding: 1rem;
-   margin-left: 5%;}
-td {font-family:italic,sans-serif;
-  border-style: dashed;
-  color: gold; 
-  border-radius: 5%;margin: 10%;margin-top: -4%;padding: 1rem;margin-left: 5%;}
-table {margin-left: auto;
-  margin-right: auto; text-align: left;justify-content: left;}
-label {font-family:italic,sans-serif; color: gold; margin-top: 10%;} 
-
-.outlier {
-  display: block; /* Ensures left alignment */
-  text-align: left;
-  color: whitesmoke;
-  font-family: italic, sans-serif;
-  font-size: 100%;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-a:hover .hover-image {
-  opacity: 0;
+section {
+  background-color: #1a1a1a;
+  border: 1px dashed gold;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
 }
 
-a:hover .hover-text {
-  opacity: 1;
-}
-
-.hover-container a {
-  position: relative;
-  display: block; /* Makes the link element the container for both text and image */
-  text-decoration: none; /* Removes underline on the link */
-}
-
-a:hover .hover-text {
-  display: inline; /* Ensures the text link becomes visible */
-}
-
-.outlier-img {
-  transition: opacity 0.5s ease; /* Smooth fade on hover */
-}
-
-a .hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: .9em;
+h2, h3 {
   color: white;
-  font-family: Arial, sans-serif;
-  text-shadow: 1px 2px 5px black;
-  opacity: 0;
-  pointer-events: none; /* Disables interaction with the hover-text directly */
-  transition: opacity 0.3s ease-in-out;
+  text-shadow: 1px 1px 5px black;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.hover-container1 {
-  position: relative;
-  width: 200px;
-  height: auto;
-  text-align: left
-  margin: 10px auto;
-  border-radius: 20px; /* Apply rounded corners */
-  overflow: hidden; /* Ensures child elements respect the border-radius */
+ul, li {
+  color: gold;
+  font-size: 1em;
+  margin: 5px 0;
 }
 
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-.hover-container {
+a:hover {
+  color: #90EE90;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px dashed gold;
+  text-align: left;
+}
+
+th {
+  color: white;
+}
+
+td {
+  color: gold;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: gold;
+}
+
+input, textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  background-color: black;
+  color: gold;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hover-container, .hover-container1 {
   position: relative;
   width: 200px;
-  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
   text-align: center;
-  margin: 10px auto;
-  border-radius: 20px; /* Apply rounded corners */
-  overflow: hidden; /* Ensures child elements respect the border-radius */
 }
 
 .hover-image {
   width: 100%;
-  height: auto;
-  transition: opacity .9s ease-in-out;
-  border-radius: 70%; /* Ensure image also respects the border-radius */
+  transition: opacity 0.5s ease;
+  border-radius: 10px;
 }
 
 .hover-text {
@@ -154,27 +110,19 @@ a .hover-text {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5em;
+  font-size: 1em;
   color: gold;
-  font-family: Arial, sans-serif;
-  text-shadow: 1px 2px 5px black;
+  text-shadow: 1px 1px 5px black;
   opacity: 0;
-  pointer-events: none; /* Disables interaction with the hover-text directly */
   transition: opacity 0.3s ease-in-out;
 }
 
-.hover-container:hover .hover-image {
-  opacity: 0; /* Hide the image on hover */
+.hover-container:hover .hover-image,
+.hover-container1:hover .hover-image {
+  opacity: 0;
 }
 
-.hover-container:hover .hover-text {
-  opacity: 1; /* Show the text on hover */
+.hover-container:hover .hover-text,
+.hover-container1:hover .hover-text {
+  opacity: 1;
 }
-
-
-
-
-
-
-/*did the 5% radius to give a nice flat appearance all around but to round off the corners just a little bit*\
-/*borrowed code from https://www.w3schools.com/tags/tag_table.asp*\

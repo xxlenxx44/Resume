@@ -90,14 +90,31 @@ input, textarea {
   justify-content: space-between;
 }
 
-.hover-container, .hover-container1 {
+.hover-container  {
   position: relative;
   width: 200px;
   margin: 20px auto;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
+  align-items: left;}
+
+
+  .hover-container1 {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left; 
+    display: inline-block;
 }
+
+.hover-image {
+    display: block;
+    margin: 0; 
+}
+
 
 .hover-image {
   width: 100%;

@@ -18,7 +18,7 @@ body {
 
 section {
   background-color: #1a1a1a;
-  border: 1px dashed gold;
+  border: 1px groove gold;
   border-radius: 10px;
   margin: 20px;
   padding: 20px;
@@ -27,7 +27,7 @@ section {
 }
 
 h2, h3 {
-  color: white;
+  color: whitesmoke;
   text-shadow: 1px 1px 5px black;
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -40,13 +40,13 @@ ul, li {
 }
 
 a {
-  color: whitesmoke;
+  color: gray;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #90EE90;
+  color: whitesmoke;
 }
 
 table {
@@ -57,7 +57,7 @@ table {
 
 th, td {
   padding: 10px;
-  border: 1px dashed gold;
+  border: 1px solid gold;
   text-align: left;
 }
 

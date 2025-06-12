@@ -43,7 +43,9 @@ a {
   color: gray;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: normal;
 }
+.kirktire {font-size: .75em;color: gold;}
 
 a:hover {
   color: whitesmoke;

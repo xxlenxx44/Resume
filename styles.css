@@ -112,6 +112,7 @@ input, textarea {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
+  font-size: .92em;
 }
 
 .hover-container1 {

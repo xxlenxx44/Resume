@@ -315,3 +315,16 @@ input, textarea {
     font-size: 0.9em;
   }
 }
+/* Remove default ul padding and margin globally */
+ul {
+  padding-left: 1.25rem; /* smaller indent to keep bullets visible but inside */
+  margin-left: 0;
+  list-style-position: inside; /* makes bullets part of the content box */
+}
+
+/* For nav specifically: no bullets at all */
+.nav-links {
+  list-style: none;  /* already present, but keep it here */
+  padding-left: 0;
+  margin-left: 0;
+}

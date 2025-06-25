@@ -213,3 +213,33 @@ input, textarea {
   }
 }
 
+/* Fix list indentation and scaling for mobile */
+ul {
+  padding-left: 1.2rem;          /* Prevents bullets from pushing outside */
+  list-style-position: inside;   /* Keeps bullets inside the box */
+}
+
+@media (max-width: 768px) {
+  ul {
+    font-size: 0.95em;
+    padding-left: 1rem;
+  }
+
+  li {
+    font-size: 0.95em;
+  }
+
+  section {
+    padding: 15px; /* slightly tighter on small screens */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 1em;
+  }
+}

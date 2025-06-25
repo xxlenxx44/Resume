@@ -129,11 +129,14 @@ input, textarea {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
+  font-size: .92em;
 }
 
 .hover-container1 {
   text-align: left;
   display: inline-block;
+  
+  
 }
 
 .hover-image {
@@ -147,7 +150,7 @@ input, textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1rem;
+  font-size: .70rem;
   color: gold;
   text-shadow: 1px 1px 5px black;
   opacity: 0;
@@ -287,5 +290,22 @@ input, textarea {
   /* Sections maintain font size */
   section, ul, li, p, label, input, textarea {
     font-size: 1rem;
+  }
+}
+/* === Ensure consistent font size across mobile view === */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  body, section, ul, li, label, input, textarea, th, td, table {
+    font-size: 1rem !important;
+  }
+
+  .hover-text,
+  .kirktire,
+  .hover-container,
+  .hover-container1 {
+    font-size: 0.85rem !important;
   }
 }

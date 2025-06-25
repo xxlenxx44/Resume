@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,125 +8,140 @@
   <title>Len's Resume</title>
 </head>
 <body>
-  <section>
-   <div class="hover-container">
-  <img src="myimages/springboard.jpg" alt="Springboard Logo" class="hover-image">
-  <span class="hover-text">Welcome to my Resume!</span>
-</div>
+  <div class="brand">My Resume</div>
+  <!-- ✅ Navbar -->
+  <nav class="navbar">
+  
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#learned">Learned</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+  <!-- 🔽 Welcome Section -->
+  <section id="welcome">
+    <div class="hover-container">
+      <img src="myimages/springboard.jpg" alt="Springboard Logo" class="hover-image">
+      <span class="hover-text">Welcome to my Resume!</span>
+    </div>
+
     <table>
       <thead>
-        <tr>
-          <th>Name:</th>
-          <td>Len Faltin</td>
-        </tr>
+        <tr><th>Name:</th><td>Len Faltin</td></tr>
       </thead>
       <tbody>
-        <tr>
-          <th>Email:</th>
-          <td>lenfaltin@yahoo.com</td>
-        </tr>
-        <tr>
-          <th>Phone:</th>
-          <td>6302155312</td>
-        </tr>
+        <tr><th>Email:</th><td>lenfaltin@yahoo.com</td></tr>
+        <tr><th>Phone:</th><td>6302155312</td></tr>
         <tr>
           <th>LinkedIn:</th>
-          <td>
-            <a href="https://www.linkedin.com/in/len-faltin-83a255127/" target="_blank">
-              My LinkedIn Profile
-            </a>
-          </td>
+          <td><a href="https://www.linkedin.com/in/len-faltin-83a255127/" target="_blank">My LinkedIn Profile</a></td>
         </tr>
       </tbody>
     </table>
+  </section>
 
+  <!-- 🔽 Projects -->
+  <section id="projects">
+    <h2>Current Projects</h2>
+   <center> <li class="hover-container1">
+     <a class="kirktire" href="https://play.google.com/store/apps/details?id=com.wnapp.id1749521638915" target="_blank">
+        <img src="myimages/pallettracker.png" alt="Kirktire" class="hover-image">
+      <span class="hover-text">Pallet Tracker is a simple app I created to help track pallets in the warehouse. I built the website myself using JavaScript, HTML, and CSS, and teamed up with a developer to bring it to Android. It’s now live on the Google Play Store.</span>
+      </a>
+    </li></center> 
+  </section>
 
-    <section>
-      <h2><center>Current Projects</center></h2>
-      <center><ul>
-        <li class="hover-container1">
-          <a class="kirktire" href="https://xxlenxx44.github.io/kirktire/" target="_blank">
-            <img src="myimages/kirktire.jpg" alt="Kirktire" class="hover-image">
-            <span class="hover-text">
-             Made a website for a tire shop in Chicago. HTML/CSS were used to make this website.
-            </span>
-          </a>
-        </li>
-      </ul>
-       <ul></center>
-       <center> <li class="hover-container1">
-          <a class="kirktire" href="https://xxlenxx44.github.io/haultracker/" target="_blank">
-            <img src="myimages/pallettracker.png" alt="Kirktire" class="hover-image">
-            <span class="hover-text">
-          Website was made to help keep track of production rates and to help keep track of the amount of pallets that are being moved around a facility like a warehouse. Currently in process of uploading to Google Play Store.
-            </span>
-          </a>
-        </li>
-      </ul>
-    </center>
-    </section>
-    
-</section>
-  
-  <section>
-    <h2>Education</h2>
+  <!-- 🔽 Education -->
+  <section id="education">
+    <h2>Tech Related Education</h2>
     <ul>
       <li>Springboard 8-2024/12-2024</li>
-      <li>Coursera Google Tech Support Fundamentals 4-2023/7-2023</li>
+      <li>Multiple Coursera Certificates 2023-Present</li>
+      
+    </ul>
+    <h2>Non-Tech Related</h2>
+    <ul>
       <li>Illinois Welding School 2017-2018</li>
       <li>Lemont High School 2012-2016</li>
     </ul>
   </section>
-  <section>
+
+  <!-- 🔽 Achievements -->
+  <section id="achievements">
     <h2>Achievements</h2>
     <ul>
       <li>Lemont High School Chess 2016 Conference Champions</li>
-     
-        <li><a class="iws" href="https://www.facebook.com/illinoisWeldingSchool/" target="_blank">
-          
-       Certificate of Appreciation from Illinois Welding School for helping set up their Facebook page.</a>
-        </li>
+      <li>
+        <a class="iws" href="https://www.facebook.com/illinoisWeldingSchool/" target="_blank">
+          Certificate of Appreciation from Illinois Welding School for helping set up their Facebook page.
+        </a>
+      </li>
     </ul>
   </section>
 
-  <section> <h2>Certifications Received in the Tech Field.</h2>
-
-<li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/8X5J32LDW2WG" target="_blank">
-  Google Tech Support Fundamentals class offered by Coursera
-  </li>
-</a>
-<li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/K1CSMI0S0L2Y" target="_blank">
-  John Hopkins University HTML, CSS, and Javascript for Web Developers class offered by Coursera
-  </li>
-</a>
-<li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/X9NDPC7BN3VC" target="_blank">
-  University of Minnesota IT Infrastructure and Emerging Trends class offered by Coursera
-  </li>
-</a>
-
-<li><a class="iws" href="https://www.credential.net/fad2f3ca-a842-45d1-acd1-0d2fa772b860#acc.msenX1fy" target="_blank">
-  Springboard Software Development Career Program Certificate
-  </li>
-</a>
-  </section>  
-  
-
-  <section>
-    <h2>What I have learned while taking these classes</h2>
+  <!-- 🔽 Certifications -->
+  <section id="certifications">
+    <h2>Certifications Received in the Tech Field</h2>
     <ul>
-      <li>JavaScript, CSS, and HTML, the foundations to build a website.</li>
-      <li>Making a table</li>
-    <li>How to use GitHub and how to use GitHub Desktop</li>
-    <li>How to use Git Bash</li>
-    <li>How to use Visual Studio Code</li>
-    <li>implementing APIs to handle data</li>
-      <li>How to incorporate CSS into my documents to make them more vibrant and interactive!</li>
-      <li>How to use different elements of HTML to build this resume</li>
-      <li>Learning different implentations within CSS to give the HTML life found within this resume.</li>
+      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/8X5J32LDW2WG" target="_blank">Google Tech Support Fundamentals (Coursera)</a></li>
+      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/X9NDPC7BN3VC" target="_blank">IT Infrastructure & Emerging Trends - University of Minnesota</a></li>
+      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/K1CSMI0S0L2Y" target="_blank">HTML, CSS, and JavaScript Module 1 - Johns Hopkins</a></li>
+      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/DV4A32ZCRFSW" target="_blank">HTML, CSS, and JavaScriptModule 2 - Johns Hopkins</a></li>
+      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/DV4A32ZCRFSW" target="_blank">HTML, CSS, and JavaScriptModule 3 - Johns Hopkins</a></li>
+      <li><a class="iws" href="https://www.credential.net/fad2f3ca-a842-45d1-acd1-0d2fa772b860#acc.msenX1fy" target="_blank">Springboard Software Development Career Program Certificate</a></li>
     </ul>
   </section>
-<section><a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy for Pallet Tracker</a></section>
-  <section id="contact-section">
+
+  <!-- 🔽 Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript, CSS, and HTML</li>
+      <li>Table creation & layout</li>
+      <li>GitHub & GitHub Desktop</li>
+      <li>Git Bash</li>
+      <li>Visual Studio Code</li>
+      <li>APIs for data handling</li>
+      <li>Responsive design & interactivity</li>
+      <li>CSS styling techniques</li>
+      <li>HTML5 structural elements</li>
+      <li>Twitter Bootstrap</li>
+    </ul>
+  </section>
+
+  <!-- 🔽 What I Learned -->
+  <section id="learned">
+    <h2>What I Have Learned</h2>
+    <ul>
+      <li>Foundations of front-end web development</li>
+      <li>Web page structuring and interactivity</li>
+      <li>Form building and submission</li>
+      <li>Use of developer tools and environments</li>
+    </ul>
+  </section>
+
+  <!-- 🔽 Privacy Policy -->
+  <section id="privacy">
+    <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy for Pallet Tracker</a>
+  </section>
+
+  <!-- 🔽 Contact -->
+  <section id="contact">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/xdkovepv" method="post" class="gform">
       <ul>
@@ -162,6 +176,6 @@
       </div>
     </form>
   </section>
-  
+
 </body>
 </html>

@@ -2,34 +2,31 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="styles.css">
-  <meta name="google-site-verification" content="nkNZb0x6x_SFKcXI0r96hp8tsGVzf4MNbPUseSM8RaU" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Len's Resume</title>
 </head>
 <body>
   <div class="brand">My Resume</div>
+
   <!-- Navbar -->
-  <center><nav class="navbar">
+  <nav class="navbar">
     <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     <ul class="nav-links">
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#certifications">Certifications</a></li>
-      
       <li><a href="#skills">Skills</a></li>
       <li><a href="#learned">Learned</a></li>
       <li><a href="#privacy">Privacy</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav></center>
+  </nav>
 
   <script>
-    const menuToggle = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+    document.getElementById('mobile-menu').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
     });
   </script>
 
@@ -58,10 +55,10 @@
   <!-- Projects -->
   <section id="projects">
     <h2>Current Projects</h2>
-   <center> <ul>
-      <li class="hover-container1">
+   <center> <ul class="projects-list">
+      <li class="hover-container hover-container1">
         <a class="kirktire" href="https://play.google.com/store/apps/details?id=com.wnapp.id1749521638915" target="_blank">
-          <img src="myimages/pallettracker.png" alt="Kirktire" class="hover-image">
+          <img src="myimages/pallettracker.png" alt="Pallet Tracker" class="hover-image">
           <span class="hover-text">Pallet Tracker is an app I built to track warehouse pallets. I developed the website using JavaScript, HTML, and CSS, then partnered with a developer to launch it on Android. It’s now live on Google Play.</span>
         </a>
       </li>

@@ -292,20 +292,29 @@ input, textarea {
     font-size: 1rem;
   }
 }
-/* === Ensure consistent font size across mobile view === */
+/* --- Fix inconsistent font sizes on mobile --- */
 @media (max-width: 768px) {
   html {
     font-size: 16px;
   }
 
-  body, section, ul, li, label, input, textarea, th, td, table {
+  body,
+  section,
+  table,
+  th,
+  td,
+  #welcome * {
     font-size: 1rem !important;
   }
 
-  .hover-text,
-  .kirktire,
+  .hover-text {
+    font-size: 0.75rem !important;
+    overflow-wrap: break-word;
+    padding: 0.4rem;
+  }
+
   .hover-container,
   .hover-container1 {
-    font-size: 0.85rem !important;
+    width: 150px;
   }
 }

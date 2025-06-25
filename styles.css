@@ -38,6 +38,8 @@ ul, li {
   color: gold;
   font-size: 1em;
   margin: 5px 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
 
 a {
@@ -202,4 +204,12 @@ input, textarea {
   .menu-toggle {
     display: block;
   }
+
+  h2 {
+    font-size: 1.2em;
+  }
+  .hover-text {
+    font-size: 0.9em;
+  }
 }
+

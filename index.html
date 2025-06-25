@@ -9,9 +9,8 @@
 </head>
 <body>
   <div class="brand">My Resume</div>
-  <!-- ✅ Navbar -->
+  <!-- Navbar -->
   <nav class="navbar">
-  
     <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     <ul class="nav-links">
       <li><a href="#projects">Projects</a></li>
@@ -33,7 +32,7 @@
     });
   </script>
 
-  <!-- 🔽 Welcome Section -->
+  <!-- Welcome Section -->
   <section id="welcome">
     <div class="hover-container">
       <img src="myimages/springboard.jpg" alt="Springboard Logo" class="hover-image">
@@ -55,24 +54,25 @@
     </table>
   </section>
 
-  <!-- 🔽 Projects -->
+  <!-- Projects -->
   <section id="projects">
     <h2>Current Projects</h2>
-   <center> <li class="hover-container1">
-     <a class="kirktire" href="https://play.google.com/store/apps/details?id=com.wnapp.id1749521638915" target="_blank">
-        <img src="myimages/pallettracker.png" alt="Kirktire" class="hover-image">
-      <span class="hover-text">Pallet Tracker is a simple app I created to help track pallets in the warehouse. I built the website myself using JavaScript, HTML, and CSS, and teamed up with a developer to bring it to Android. It’s now live on the Google Play Store.</span>
-      </a>
-    </li></center> 
+    <ul>
+      <li class="hover-container1">
+        <a class="kirktire" href="https://play.google.com/store/apps/details?id=com.wnapp.id1749521638915" target="_blank">
+          <img src="myimages/pallettracker.png" alt="Kirktire" class="hover-image">
+          <span class="hover-text">Pallet Tracker is a simple app I created to help track pallets in the warehouse. I built the website myself using JavaScript, HTML, and CSS, and teamed up with a developer to bring it to Android. It’s now live on the Google Play Store.</span>
+        </a>
+      </li>
+    </ul>
   </section>
 
-  <!-- 🔽 Education -->
+  <!-- Education -->
   <section id="education">
     <h2>Tech Related Education</h2>
     <ul>
       <li>Springboard 8-2024/12-2024</li>
       <li>Multiple Coursera Certificates 2023-Present</li>
-      
     </ul>
     <h2>Non-Tech Related</h2>
     <ul>
@@ -81,7 +81,7 @@
     </ul>
   </section>
 
-  <!-- 🔽 Achievements -->
+  <!-- Achievements -->
   <section id="achievements">
     <h2>Achievements</h2>
     <ul>
@@ -94,20 +94,20 @@
     </ul>
   </section>
 
-  <!-- 🔽 Certifications -->
+  <!-- Certifications -->
   <section id="certifications">
     <h2>Certifications Received in the Tech Field</h2>
     <ul>
       <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/8X5J32LDW2WG" target="_blank">Google Tech Support Fundamentals (Coursera)</a></li>
       <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/X9NDPC7BN3VC" target="_blank">IT Infrastructure & Emerging Trends - University of Minnesota</a></li>
       <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/K1CSMI0S0L2Y" target="_blank">HTML, CSS, and JavaScript Module 1 - Johns Hopkins</a></li>
-      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/DV4A32ZCRFSW" target="_blank">HTML, CSS, and JavaScriptModule 2 - Johns Hopkins</a></li>
-      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/DV4A32ZCRFSW" target="_blank">HTML, CSS, and JavaScriptModule 3 - Johns Hopkins</a></li>
+      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/DV4A32ZCRFSW" target="_blank">HTML, CSS, and JavaScript Module 2 - Johns Hopkins</a></li>
+      <li><a class="iws" href="https://www.coursera.org/account/accomplishments/verify/DV4A32ZCRFSW" target="_blank">HTML, CSS, and JavaScript Module 3 - Johns Hopkins</a></li>
       <li><a class="iws" href="https://www.credential.net/fad2f3ca-a842-45d1-acd1-0d2fa772b860#acc.msenX1fy" target="_blank">Springboard Software Development Career Program Certificate</a></li>
     </ul>
   </section>
 
-  <!-- 🔽 Skills -->
+  <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
@@ -124,7 +124,7 @@
     </ul>
   </section>
 
-  <!-- 🔽 What I Learned -->
+  <!-- What I Learned -->
   <section id="learned">
     <h2>What I Have Learned</h2>
     <ul>
@@ -132,15 +132,21 @@
       <li>Web page structuring and interactivity</li>
       <li>Form building and submission</li>
       <li>Use of developer tools and environments</li>
+      <li>Version control with Git and GitHub</li>
+      <li>Responsive design principles</li>
+      <li>CSS styling and layout techniques</li>
+      <li>JavaScript for dynamic content</li>
+      <li>APIs for data retrieval and manipulation</li>
+      <li>Debugging and troubleshooting skills</li>
     </ul>
   </section>
 
-  <!-- 🔽 Privacy Policy -->
+  <!-- Privacy Policy -->
   <section id="privacy">
     <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy for Pallet Tracker</a>
   </section>
 
-  <!-- 🔽 Contact -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/xdkovepv" method="post" class="gform">
@@ -167,7 +173,7 @@
         <label><input type="checkbox" name="contact_time" value="evening"> Evening</label>
       </ul>
       <ul>
-       <center> <label for="message">Message Reason:</label></center>
+        <label for="message">Message Reason:</label>
         <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
       </ul>
       <div class="form-actions">
@@ -176,6 +182,5 @@
       </div>
     </form>
   </section>
-
 </body>
 </html>

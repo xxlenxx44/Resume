@@ -9,7 +9,7 @@
 body {
   background-color: black;
   color: gold;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -37,9 +37,11 @@ h2, h3 {
 ul, li {
   color: gold;
   font-size: 1em;
-  margin: 5px 0;
   margin-bottom: 0.5rem;
   line-height: 1.4;
+  list-style-position: inside; /* keep bullets inside */
+  padding-left: 1.2em; /* bullet indent */
+  word-wrap: break-word; /* wrap long words */
 }
 
 a {
@@ -144,7 +146,7 @@ input, textarea {
   opacity: 1;
 }
 
-/* ✅ Navbar Styling */
+/* Navbar Styling */
 .navbar {
   background-color: black;
   color: #fff;
@@ -184,7 +186,7 @@ input, textarea {
   cursor: pointer;
 }
 
-/* Responsive (Mobile) Navbar */
+/* Responsive (Mobile) Styles */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -208,38 +210,17 @@ input, textarea {
   h2 {
     font-size: 1.2em;
   }
+
   .hover-text {
     font-size: 0.9em;
   }
-}
-
-/* Fix list indentation and scaling for mobile */
-ul {
-  padding-left: 1.2rem;          /* Prevents bullets from pushing outside */
-  list-style-position: inside;   /* Keeps bullets inside the box */
-}
-
-@media (max-width: 768px) {
-  ul {
-    font-size: 0.95em;
-    padding-left: 1rem;
-  }
-
-  li {
-    font-size: 0.95em;
-  }
 
   section {
-    padding: 15px; /* slightly tighter on small screens */
+    padding: 15px;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .nav-links li a {
+  ul, li {
     font-size: 1em;
+    padding-left: 1.2em;
   }
 }

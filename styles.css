@@ -25,6 +25,8 @@ section {
   padding: 20px;
   width: 90%;
   max-width: 800px;
+  font-size: 1rem;       /* Consistent font size */
+  line-height: 1.5;      /* Better readability */
 }
 
 h2, h3 {
@@ -35,11 +37,12 @@ h2, h3 {
 }
 
 ul, li {
-  color: gold;
-  font-size: 1em;
-  margin: 5px 0;
+  color: inherit;               /* Inherit from section */
+  font-size: inherit;           /* Inherit font size */
+  margin-left: 1.5em;           /* Indent to keep bullets inside */
   margin-bottom: 0.5rem;
-  line-height: 1.4;
+  line-height: inherit;
+  list-style-position: inside;  /* Bullets inside the box */
 }
 
 a {
@@ -144,7 +147,7 @@ input, textarea {
   opacity: 1;
 }
 
-/* ✅ Navbar Styling */
+/* Navbar Styling */
 .navbar {
   background-color: black;
   color: #fff;
@@ -163,14 +166,21 @@ input, textarea {
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1rem; /* space between buttons */
+  flex-wrap: wrap;          /* Allow wrapping to next line */
+  gap: 1rem;
+  justify-content: center;  /* Center horizontally */
   padding: 0;
+  margin: 0;
+  list-style: none;         /* Remove bullets */
+}
+
+.nav-links li {
+  flex: 0 1 22%;            /* About 4 per row with gaps */
+  text-align: center;
   margin: 0;
 }
 
-/* Nav links styled as buttons */
 .nav-links li a {
   display: inline-block;
   padding: 8px 16px;
@@ -179,6 +189,8 @@ input, textarea {
   color: gold;
   font-weight: 600;
   text-decoration: none;
+  width: 100%;              /* Fill li width */
+  box-sizing: border-box;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -206,7 +218,7 @@ input, textarea {
     width: 100%;
     display: none;
     padding: 1rem 0;
-    gap: 0; /* remove gap on mobile */
+    gap: 0;
   }
 
   .nav-links.active {
@@ -235,96 +247,4 @@ input, textarea {
   .hover-text {
     font-size: 0.9em;
   }
-}
-/* Navbar container */
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;          /* allow wrapping to next line */
-  gap: 1rem;
-  justify-content: center;  /* center horizontally */
-  padding: 0;
-  margin: 0;
-  list-style: none;         /* remove bullets */
-}
-
-/* Each nav item */
-.nav-links li {
-  flex: 0 1 22%;            /* ~4 per row with gaps */
-  text-align: center;
-  margin: 0;                /* no extra margin */
-}
-
-/* Nav links styled as buttons */
-.nav-links li a {
-  display: inline-block;
-  padding: 8px 16px;
-  border: 2px solid gold;
-  border-radius: 8px;
-  color: gold;
-  font-weight: 600;
-  text-decoration: none;
-  width: 100%;              /* fill li width */
-  box-sizing: border-box;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Hover effect on buttons */
-.nav-links li a:hover {
-  background-color: gold;
-  color: black;
-  text-decoration: none;
-}
-
-/* Remove old nav-links styles related to list display & gap */
-.nav-links {
-  /* removed display: flex; gap: 1.5rem; from original to replace with above */
-}
-
-/* Responsive Hamburger Menu stays unchanged */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-/* Mobile menu styles unchanged */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #333;
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    padding: 1rem 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-  .hover-text {
-    font-size: 0.9em;
-  }
-}
-/* Remove default ul padding and margin globally */
-ul {
-  padding-left: 1.25rem; /* smaller indent to keep bullets visible but inside */
-  margin-left: 0;
-  list-style-position: inside; /* makes bullets part of the content box */
-}
-
-/* For nav specifically: no bullets at all */
-.nav-links {
-  list-style: none;  /* already present, but keep it here */
-  padding-left: 0;
-  margin-left: 0;
 }

@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="google-site-verification" content="nkNZb0x6x_SFKcXI0r96hp8tsGVzf4MNbPUseSM8RaU" />
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Len's Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Len Faltin – Resume</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <!-- =====================  BRAND  ===================== -->
   <div class="brand">My Resume</div>
-  <!-- Navbar -->
+
+  <!-- =====================  NAVBAR  ==================== -->
   <nav class="navbar">
-    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-    <ul class="nav-links">
+    <button id="menu-btn" class="menu-toggle" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+
+    <ul id="nav-links" class="nav-links">
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#achievements">Achievements</a></li>
@@ -25,14 +30,13 @@
   </nav>
 
   <script>
-    const menuToggle = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
+    /* Open–close hamburger without overlaying content */
+    const btn = document.getElementById('menu-btn');
+    const links = document.getElementById('nav-links');
+    btn.addEventListener('click', () => links.classList.toggle('open'));
   </script>
 
-  <!-- Welcome Section -->
+  <!-- =====================  WELCOME  =================== -->
   <section id="welcome">
     <div class="hover-container">
       <img src="myimages/springboard.jpg" alt="Springboard Logo" class="hover-image">
@@ -40,33 +44,29 @@
     </div>
 
     <table>
-      <thead>
-        <tr><th>Name:</th><td>Len Faltin</td></tr>
-      </thead>
-      <tbody>
-        <tr><th>Email:</th><td>lenfaltin@yahoo.com</td></tr>
-        <tr><th>Phone:</th><td>6302155312</td></tr>
-        <tr>
-          <th>LinkedIn:</th>
-          <td><a href="https://www.linkedin.com/in/len-faltin-83a255127/" target="_blank">My LinkedIn Profile</a></td>
-        </tr>
-      </tbody>
+      <tr><th>Name:</th>      <td>Len Faltin</td></tr>
+      <tr><th>Email:</th>     <td>lenfaltin@yahoo.com</td></tr>
+      <tr><th>Phone:</th>     <td>630-215-5312</td></tr>
+      <tr><th>LinkedIn:</th>  <td><a href="https://www.linkedin.com/in/len-faltin-83a255127/" target="_blank">My LinkedIn Profile</a></td></tr>
     </table>
   </section>
 
-  <!-- Projects -->
+  <!-- =====================  PROJECTS  ================== -->
   <section id="projects">
     <h2>Current Projects</h2>
-    <center><ul>
-      <li class="hover-container1">
-        <a class="kirktire" href="https://play.google.com/store/apps/details?id=com.wnapp.id1749521638915" target="_blank">
-          <img src="myimages/pallettracker.png" alt="Kirktire" class="hover-image">
-          <span class="hover-text">Pallet Tracker is a simple app I created to help track pallets in the warehouse. I built the website myself using JavaScript, HTML, and CSS, and teamed up with a developer to bring it to Android. It’s now live on the Google Play Store.</span>
+    <center><ul class="projects-list">
+      <li class="hover-container hover-container1">
+        <a href="https://play.google.com/store/apps/details?id=com.wnapp.id1749521638915" target="_blank">
+          <img src="myimages/pallettracker.png" alt="Pallet Tracker logo" class="hover-image">
+          <span class="hover-text">
+            Pallet Tracker lets warehouses log pallet moves. I built the web
+            version with JS/HTML/CSS and teamed with a developer to ship the
+            Android version (now live on Google Play).
+          </span>
         </a>
       </li>
     </ul></center>
   </section>
-
   <!-- Education -->
   <section id="education">
     <h2>Tech Related Education</h2>

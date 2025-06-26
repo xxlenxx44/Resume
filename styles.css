@@ -75,9 +75,10 @@ input,textarea{
   color:#fff;
   width:100%;
   max-width:800px;
-  display:flex;
-  flex-direction:column;        /* 🚩 NEW: vertical on mobile by default */
-  align-items:flex-start;
+  display:center;
+  flex-direction:center;        /* 🚩 NEW: vertical on mobile by default */
+  align-items:center;
+  justify-content: center;
   margin:0 auto 10px;
 }
 .menu-toggle{

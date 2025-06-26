@@ -149,54 +149,29 @@ input,textarea{
 }
 
 /* ---------- MOBILE-ONLY FIXES ---------- */
-@media(max-width:768px){
-  .navbar{
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+/* --- Fix inconsistent font sizes on mobile --- */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
   }
 
-  .menu-toggle{
-    display:block;
-    margin:0 auto 10px;
-    padding:8px 20px;
-    font-size:1.8rem;
-    color:gold;
-    background:none;
-    border:2px solid gold;
-    border-radius:8px;
-    cursor:pointer;
+  body,
+  section,
+  table,
+  th,
+  td,
+  #welcome * {
+    font-size: 1rem !important;
   }
 
-  .nav-links{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .3s ease;
-    width:100%;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:.2em;
-    padding: 5px 15px 5px 15px;
+  .hover-text {
+    font-size: 0.75rem !important;
+    overflow-wrap: break-word;
+    padding: 0.4rem;
   }
 
-  .nav-links.open{
-    max-height:500px;
+  .hover-container,
+  .hover-container1 {
+    width: 150px;
   }
-
-  .nav-links li{
-    flex:0 0 25%;
-    text-align:center;
-  }
-
-  .projects-list .hover-container{
-    width:90%;
-    max-width:320px;
-  }
-
-  .projects-list .hover-text{
-    font-size:.7em;
-  }
-
-  h2{font-size:1.25rem;} 
-  h3{font-size:1.1rem;}
 }

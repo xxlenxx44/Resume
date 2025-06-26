@@ -165,9 +165,9 @@ input,textarea{
   }
 
   .hover-text {
-    font-size: 0.75rem !important;
+    font-size: 55% !important;
     overflow-wrap: break-word;
-    padding: 0.4rem;
+    padding: 0.2rem;
   }
 
   .hover-container,

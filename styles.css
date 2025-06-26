@@ -124,9 +124,9 @@ input,textarea{
 .nav-links a{
   display:inline-block;
   width:100%;
-  padding:8px 16px;
+  padding:10px 15px;
   border:2px solid gold;
-  border-radius:8px;
+  border-radius:15px;
   font-weight:600;
   color:gold;
   transition:background .3s,color .3s;
@@ -175,7 +175,8 @@ input,textarea{
     width:100%;
     flex-wrap:wrap;
     justify-content:center;
-    gap:1rem;
+    gap:.2em;
+    padding: 5px 15px 5px 15px;
   }
 
   .nav-links.open{
@@ -193,7 +194,7 @@ input,textarea{
   }
 
   .projects-list .hover-text{
-    font-size:0.4em;
+    font-size:.7em;
   }
 
   h2{font-size:1.25rem;} 

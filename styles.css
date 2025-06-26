@@ -10,6 +10,7 @@ body{
   flex-direction:column;
   align-items:center;
 }
+
 /* ---------- SECTIONS ---------- */
 section{
   background:#1a1a1a;
@@ -21,19 +22,25 @@ section{
   max-width:800px;
   color:gold;
 }
+
 /* ---------- HEADINGS ---------- */
 h2,h3{color:whitesmoke;text-shadow:1px 1px 5px #000;margin-bottom:10px;line-height:1.2;}
-h2{font-size:1.5rem;} h3{font-size:1.2rem;}
+h2{font-size:1.5rem;} 
+h3{font-size:1.2rem;}
+
 /* ---------- LISTS ---------- */
 ul{list-style-position:inside;padding-left:1.25rem;margin-bottom:.5rem;}
 li{margin:.3rem 0;}
+
 /* ---------- LINKS ---------- */
 a{color:gray;text-decoration:none;transition:color .3s;}
 a:hover{color:whitesmoke;}
+
 /* ---------- TABLE ---------- */
 table{width:100%;margin:20px 0;border-collapse:collapse;}
 th,td{padding:10px;border:1px solid gold;text-align:left;}
 th{color:#fff;}
+
 /* ---------- FORMS ---------- */
 label{display:block;margin:10px 0 5px;}
 input,textarea{
@@ -59,10 +66,17 @@ input,textarea{
 .hover-container1{display:inline-block;text-align:left;}
 .hover-image{width:100%;border-radius:10px;transition:opacity .5s;}
 .hover-text{
-  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  font-size:.68rem;color:gold;text-shadow:1px 1px 5px #000;
-  padding:.6rem;overflow-wrap:break-word;text-align:center;
-  opacity:0;transition:opacity .3s;
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  font-size:.68rem;
+  color:gold;
+  text-shadow:1px 1px 5px #000;
+  padding:.6rem;
+  overflow-wrap:break-word;
+  text-align:center;
+  opacity:0;
+  transition:opacity .3s;
 }
 .hover-container:hover .hover-image,
 .hover-container1:hover .hover-image{opacity:0;}
@@ -75,22 +89,22 @@ input,textarea{
   color:#fff;
   width:100%;
   max-width:800px;
-  display:center;
-  flex-direction:center;        /* 🚩 NEW: vertical on mobile by default */
+  display:flex;
+  flex-direction:column;
   align-items:center;
-  justify-content: center;
+  justify-content:center;
   margin:0 auto 10px;
 }
 .menu-toggle{
   font-size:1.8rem;
   color:gold;
   background:none;
-  border:0;
+  border:2px solid gold;
+  border-radius:8px;
   cursor:pointer;
-  align-self:flex-end;
-  padding:0 4px;
+  margin:0 auto 10px;
+  padding:8px 20px;
 }
-/* nav links list */
 .nav-links{
   list-style:none;
   width:100%;
@@ -98,12 +112,15 @@ input,textarea{
   flex-wrap:wrap;
   gap:1rem;
   justify-content:center;
-  overflow:hidden;             /* 🚩 NEW: allow height-slide animation */
-  max-height:0;                /* closed state */
+  overflow:hidden;
+  max-height:0;
   transition:max-height .3s ease;
 }
-.nav-links.open{max-height:500px;} /* opened by JS */
-.nav-links li{flex:0 1 22%;text-align:center;}
+.nav-links.open{max-height:500px;}
+.nav-links li{
+  flex:0 0 25%;
+  text-align:center;
+}
 .nav-links a{
   display:inline-block;
   width:100%;
@@ -118,10 +135,14 @@ input,textarea{
 
 /* ---------- DESKTOP TWEAKS ---------- */
 @media(min-width:769px){
-  .navbar{flex-direction:row;align-items:center;justify-content:center;}
-  .menu-toggle{display:none;}        /* hide hamburger */
+  .navbar{
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+  }
+  .menu-toggle{display:none;}
   .nav-links{
-    max-height:none !important;      /* always open */
+    max-height:none !important;
     gap:1rem;
     overflow:visible;
   }
@@ -129,10 +150,52 @@ input,textarea{
 
 /* ---------- MOBILE-ONLY FIXES ---------- */
 @media(max-width:768px){
-  /* 🚩 Make the hover card wider on phones so text fits */
-  .projects-list .hover-container{width:90%;max-width:320px;}
-  .projects-list .hover-text{font: size 0.4em;}
+  .navbar{
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
 
-  /* headings a bit smaller */
-  h2{font-size:1.25rem;} h3{font-size:1.1rem;}
+  .menu-toggle{
+    display:block;
+    margin:0 auto 10px;
+    padding:8px 20px;
+    font-size:1.8rem;
+    color:gold;
+    background:none;
+    border:2px solid gold;
+    border-radius:8px;
+    cursor:pointer;
+  }
+
+  .nav-links{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1rem;
+  }
+
+  .nav-links.open{
+    max-height:500px;
+  }
+
+  .nav-links li{
+    flex:0 0 25%;
+    text-align:center;
+  }
+
+  .projects-list .hover-container{
+    width:90%;
+    max-width:320px;
+  }
+
+  .projects-list .hover-text{
+    font-size:0.4em;
+  }
+
+  h2{font-size:1.25rem;} 
+  h3{font-size:1.1rem;}
 }

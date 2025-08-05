@@ -148,6 +148,33 @@ input,textarea{
   }
 }
 
+  #certifications h2 {
+    margin-bottom: 16px;
+  }
+
+  .cert-button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cert-button {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid gold;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .cert-button:hover {
+    background-color: black;
+    color: gold;
 /* ---------- MOBILE-ONLY FIXES ---------- */
 /* --- Fix inconsistent font sizes on mobile --- */
 @media (max-width: 768px) {

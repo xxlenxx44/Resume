@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Len Faltin – Resume</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,24 +15,22 @@
 
   <!-- =====================  NAVBAR  ==================== -->
   <nav class="navbar">
-    <button id="menu-btn" class="menu-toggle" aria-label="Toggle navigation">
-      &#9776;
-    </button>
-
+    <button id="menu-btn" class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     <ul id="nav-links" class="nav-links">
       <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#maintenance-certifications">Maintenance Certs</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#learned">Learned</a></li>
+      <li><a href="#maintenance">Maintenance</a></li>
       <li><a href="#privacy">Privacy</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <script>
-    /* Open–close hamburger without overlaying content */
     const btn = document.getElementById('menu-btn');
     const links = document.getElementById('nav-links');
     btn.addEventListener('click', () => links.classList.toggle('open'));
@@ -44,79 +44,79 @@
     </div>
 
     <table>
-      <tr><th>Name:</th>      <td>Len Faltin</td></tr>
-      <tr><th>Email:</th>     <td>lenfaltin@yahoo.com</td></tr>
-      <tr><th>Phone:</th>     <td>630-215-5312</td></tr>
-      <tr><th>LinkedIn:</th>  <td><a href="https://www.linkedin.com/in/len-faltin-83a255127/" target="_blank">My LinkedIn Profile</a></td></tr>
+      <tr><th>Name:</th><td>Len Faltin</td></tr>
+      <tr><th>Email:</th><td>lenfaltin@yahoo.com</td></tr>
+      <tr><th>Phone:</th><td>630-215-5312</td></tr>
+      <tr><th>LinkedIn:</th><td><a href="https://www.linkedin.com/in/len-faltin-83a255127/" target="_blank">My LinkedIn Profile</a></td></tr>
     </table>
   </section>
 
   <!-- =====================  PROJECTS  ================== -->
   <section id="projects">
     <h2>Current Projects</h2>
-    <center><ul class="projects-list">
+    <ul class="projects-list">
       <li class="hover-container hover-container1">
         <a href="https://play.google.com/store/apps/details?id=com.wnapp.id1749521638915" target="_blank">
           <img src="myimages/pallettracker.png" alt="Pallet Tracker logo" class="hover-image">
           <span class="hover-text">
-            Pallet Tracker lets warehouses log pallet moves. I built the web
-            version with JS/HTML/CSS and teamed with a developer to ship the
-            Android version (now live on Google Play).
+            Pallet Tracker lets warehouses log pallet moves. I built the web version with JS/HTML/CSS and teamed with a developer to ship the Android version (now live on Google Play).
           </span>
         </a>
       </li>
-    </ul></center>
+    </ul>
   </section>
-  <!-- Education -->
+
+  <!-- =====================  EDUCATION  ================== -->
   <section id="education">
     <h2>Tech Related Education</h2>
     <ul>
-      <li>Springboard 8-2024/12-2024</li>
+      <li>Springboard 8-2024 / 12-2024</li>
       <li>Multiple Coursera Certificates 2023-Present</li>
     </ul>
     <h2>Non-Tech Related</h2>
     <ul>
+      <li>Vincennes University 2025-2025</li>
       <li>Illinois Welding School 2017-2018</li>
       <li>Lemont High School 2012-2016</li>
     </ul>
   </section>
 
-  <!-- Achievements -->
+  <!-- =====================  ACHIEVEMENTS  ================== -->
   <section id="achievements">
     <h2>Personal Achievements</h2>
     <ul>
       <li>Lemont High School Chess 2016 Conference Champions</li>
-      <li>
-        <a class="iws" href="https://www.facebook.com/illinoisWeldingSchool/" target="_blank">
-          Certificate of Appreciation from Illinois Welding School for helping set up their Facebook page.
-        </a>
-      </li>
+      <li><a href="https://www.facebook.com/illinoisWeldingSchool/" target="_blank">Certificate of Appreciation from Illinois Welding School for helping set up their Facebook page</a></li>
     </ul>
   </section>
 
-  <!-- Certifications -->
+  <!-- =====================  CERTIFICATIONS  ================== -->
   <section id="certifications">
-  <h2>Tech Related Certifications</h2>
-  <div class="cert-button-list">
-    <button class="cert-button" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/8X5J32LDW2WG', '_blank')">
-      Tech Support Fundamentals by Google on Coursera
-    </button>
-    <button class="cert-button" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/X9NDPC7BN3VC', '_blank')">
-      IT Infrastructure & Emerging Trends by University of Minnesota on Coursera
-    </button>
-    <button class="cert-button" onclick="window.open('https://www.coursera.org/account/accomplishments/specialization/LWN6BFDXJEDP', '_blank')">
-      HTML, CSS, and Javascript for Web Developers by Johns Hopkins University on Coursera
-    </button>
-    <button class="cert-button" onclick="window.open('https://www.credential.net/fad2f3ca-a842-45d1-acd1-0d2fa772b860#acc.msenX1fy', '_blank')">
-      Springboard Software Development Career Program Certificate
-    </button>
-  </div>
-</section>
+    <h2>Tech Related Certifications</h2>
+    <div class="cert-button-list">
+      <button class="cert-button" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/8X5J32LDW2WG', '_blank')">Tech Support Fundamentals by Google</button>
+      <button class="cert-button" onclick="window.open('https://www.coursera.org/account/accomplishments/verify/X9NDPC7BN3VC', '_blank')">IT Infrastructure & Emerging Trends by University of Minnesota</button>
+      <button class="cert-button" onclick="window.open('https://www.coursera.org/account/accomplishments/specialization/LWN6BFDXJEDP', '_blank')">HTML, CSS, and Javascript for Web Developers by Johns Hopkins University</button>
+      <button class="cert-button" onclick="window.open('https://www.credential.net/fad2f3ca-a842-45d1-acd1-0d2fa772b860#acc.msenX1fy', '_blank')">Springboard Software Development Career Program Certificate</button>
+    </div>
+  </section>
 
-  <!-- Skills -->
+  <section id="maintenance-certifications">
+    <h2>Maintenance Related Certifications</h2>
+    <div class="cert-button-list">
+      <button class="cert-button" onclick="window.open('https://portal.saca.org/certificate/NKGX8P', '_blank')">SACA Electrical Systems Certification</button>
+      <button class="cert-button" onclick="window.open('https://portal.saca.org/certificate/87PV94', '_blank')">SACA Electrical Motor Control Certification</button>
+      <button class="cert-button" onclick="window.open('https://portal.saca.org/certificate/7KWPXC', '_blank')">SACA Sensor Systems Certification</button>
+      <button class="cert-button" onclick="window.open('https://portal.saca.org/certificate/V9LWKN', '_blank')">SACA Pneumatic Systems Certification</button>
+      <button class="cert-button" onclick="window.open('https://portal.saca.org/certificate/CMN5H2', '_blank')">SACA Hydraulic Systems Certification</button>
+      <button class="cert-button" onclick="window.open('https://portal.saca.org/certificate/52PK6X', '_blank')">SACA Mechanical Systems Certification</button>
+    </div>
+  </section>
+
+  <!-- =====================  SKILLS  ================== -->
   <section id="skills">
-    <h2>Skills I Have Learned In My Classes</h2>
-    <ul>
+    <h2>Skills I Have Learned In My Programming Classes</h2>
+    <ul class="list-columns">
       <li>JavaScript, CSS, and HTML</li>
       <li>Table creation & layout</li>
       <li>GitHub & GitHub Desktop</li>
@@ -130,10 +130,10 @@
     </ul>
   </section>
 
-  <!-- What I Learned -->
+  <!-- =====================  WHAT I LEARNED  ================== -->
   <section id="learned">
     <h2>What I Have Learned</h2>
-    <ul>
+    <ul class="list-columns">
       <li>Foundations of front-end web development</li>
       <li>Web page structuring and interactivity</li>
       <li>Form building and submission</li>
@@ -145,16 +145,32 @@
       <li>API integration for data handling</li>
       <li>Understanding of web accessibility</li>
       <li>Debugging and troubleshooting skills</li>
-      
     </ul>
   </section>
 
-  <!-- Privacy Policy -->
+  <!-- =====================  MAINTENANCE  ================== -->
+  <section id="maintenance">
+    <h2>Maintenance</h2>
+    <ul class="list-columns">
+      <li>Electrical Motor Control</li>
+      <li>AC/DC Electrical Systems</li>
+      <li>Hydraulic Systems</li>
+      <li>Pneumatic Systems</li>
+      <li>Mechanical Systems</li>
+      <li>Sensor Systems</li>
+      <li>Welding and Fabrication</li>
+      <li>Preventive Maintenance</li>
+      <li>Equipment Troubleshooting</li>
+      <li>Safety Protocols</li>
+    </ul>
+  </section>
+
+  <!-- =====================  PRIVACY  ================== -->
   <section id="privacy">
     <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy for Pallet Tracker</a>
   </section>
 
-  <!-- Contact -->
+  <!-- =====================  CONTACT  ================== -->
   <section id="contact">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/xdkovepv" method="post" class="gform">
